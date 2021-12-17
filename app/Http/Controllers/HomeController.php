@@ -16,6 +16,6 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('home', ['title' => 'Home', 'posts' => Post::all()]);
+        return view('home', ['title' => 'Home', 'posts' => Post::orderByDesc('published_at')->get()]);
     }
 }
