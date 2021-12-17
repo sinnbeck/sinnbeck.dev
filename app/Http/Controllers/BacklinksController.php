@@ -34,7 +34,7 @@ class BacklinksController extends Controller
             ],
             [
                 'name' => 'Tailwindcss',
-                'url' => 'tailwindcss.com',
+                'url' => 'https://tailwindcss.com',
             ],
         ];
         return view('backlinks', compact('backlinks'));
