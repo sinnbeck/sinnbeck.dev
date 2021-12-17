@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.prose pre {
+    @apply px-0
+}
+
 /*
  Margin and rounding are personal preferences,
  overflow-x-auto is recommended.

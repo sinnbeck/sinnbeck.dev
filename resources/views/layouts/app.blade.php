@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>sinnbeck-dev - @yield('title')</title>
     <link href="/css/app.css" rel="stylesheet"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -14,8 +15,8 @@
 </div>
 <div class="relative bg-white mb-10 border-b-2 border-indigo-600 ">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-            <div class="flex justify-start lg:w-0 lg:flex-1">
+        <div class="flex flex-col lg:flex-row justify-between lg: items-center py-6 md:justify-start md:space-x-10">
+            <div class="flex  justify-start lg:w-0 lg:flex-1">
                 <a href="/" class="flex items-center gap-3 text-indigo-600">
                     <img class="h-8 w-auto sm:h-10 hidden" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -26,14 +27,14 @@
                     <span class="font-logo text-3xl inline-block">sinnbeck.dev</span>
                 </a>
             </div>
-            <nav class="hidden md:flex space-x-10">
+            <nav class="flex md:flex space-x-10">
                 <div class="relative">
-                    <a href="/backlinks" class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
+                    <a href="/backlinks" class="text-xl lg:text-base text-gray-500 group bg-white rounded-md inline-flex items-center font-medium hover:text-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
                         <span>Backlinks</span>
                     </a>
                     |
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                    <a href="/" class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
+                    <a href="/" class="text-xl lg:text-base text-gray-500 group bg-white rounded-md inline-flex items-center font-medium hover:text-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
                         <span>Home</span>
                     </a>
 
@@ -45,7 +46,7 @@
     </div>
 
 </div>
-<div class="container max-w-4xl mx-auto">
+<div class="container max-w-4xl mx-auto px-4">
     @yield('content')
 </div>
 </body>
