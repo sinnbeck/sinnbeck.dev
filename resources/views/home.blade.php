@@ -6,7 +6,7 @@
     @foreach ($posts as $post)
         <article>
             <h1 class="text-2xl">
-                <a href="/posts/{{$post->slug}}" class="hover:underline hover:text-yellow-100">
+                <a href="/posts/{{$post->slug}}" class="hover:underline hover:text-indigo-700">
                     {{$post->title}}
                 </a>
             </h1>

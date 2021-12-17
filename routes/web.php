@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BacklinksController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
@@ -17,13 +18,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class);
 Route::get('/posts/{post:slug}', PostsController::class);
-Route::get('/store', function() {
-    $content = file_get_contents(base_path('facades.md'));
-
-    \App\Models\Post::create([
-        'title' => 'Facades are singletons',
-        'slug' => 'facades-are-singletons',
-        'content' => $content,
-        'published_at' => now()
-    ]);
-});
+Route::get('/backlinks', BacklinksController::class);
+//Route::get('/store', function() {
+//    $content = file_get_contents(base_path('facades.md'));
+//
+//    \App\Models\Post::create([
+//        'title' => 'Facades are singletons',
+//        'slug' => 'facades-are-singletons',
+//        'content' => $content,
+//        'published_at' => now()
+//    ]);
+//});

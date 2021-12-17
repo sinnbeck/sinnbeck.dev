@@ -1152,6 +1152,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: "Bakbak One", ui-sans-serif;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1160,11 +1165,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-lg{
@@ -1180,6 +1180,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -1250,6 +1255,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-indigo-600{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.text-indigo-500{
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1334,9 +1344,9 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
   opacity: 1;
 }
 
-.hover\:text-yellow-100:hover{
+.hover\:text-indigo-100:hover{
   --tw-text-opacity: 1;
-  color: rgb(254 249 195 / var(--tw-text-opacity));
+  color: rgb(224 231 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-amber-100:hover{
@@ -1347,6 +1357,11 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
 .hover\:text-indigo-900:hover{
   --tw-text-opacity: 1;
   color: rgb(49 46 129 / var(--tw-text-opacity));
+}
+
+.hover\:text-indigo-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{

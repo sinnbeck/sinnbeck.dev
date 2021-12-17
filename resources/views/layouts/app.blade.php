@@ -2,6 +2,8 @@
 <head>
     <title>App Name - @yield('title')</title>
     <link href="/css/app.css" rel="stylesheet"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
 </head>
 <body class="bg-slate-100">
 <div class="bg-slate-900 hidden border-b border-amber-500 mb-8 ">
@@ -26,10 +28,16 @@
             </div>
             <nav class="hidden md:flex space-x-10">
                 <div class="relative">
+                    <a href="/backlinks" class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
+                        <span>Backlinks</span>
+                    </a>
+                    |
                     <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                     <a href="/" class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-indigo-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
                         <span>Home</span>
                     </a>
+
+
 
                 </div>
             </nav>

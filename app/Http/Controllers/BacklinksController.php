@@ -15,6 +15,28 @@ class BacklinksController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('backlinks');
+        $backlinks = [
+            [
+                'name' => 'Ploi',
+                'url' => 'https://ploi.io',
+            ],
+            [
+                'name' => 'Laravel',
+                'url' => 'https://laravel.com',
+            ],
+            [
+                'name' => 'Laravel Orbit',
+                'url' => 'https://github.com/ryangjchandler/orbit',
+            ],
+            [
+                'name' => 'Torchlight',
+                'url' => 'https://torchlight.dev/',
+            ],
+            [
+                'name' => 'Tailwindcss',
+                'url' => 'tailwindcss.com',
+            ],
+        ];
+        return view('backlinks', compact('backlinks'));
     }
 }
