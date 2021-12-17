@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>App Name - @yield('title')</title>
+    <title>sinnbeck-dev - @yield('title')</title>
     <link href="/css/app.css" rel="stylesheet"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 

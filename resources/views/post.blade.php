@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', 'Posts')
 
 @section('content')
     <article class="prose max-w-none">

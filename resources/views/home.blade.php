@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', 'home')
 
 @section('content')
     @foreach ($posts as $post)
