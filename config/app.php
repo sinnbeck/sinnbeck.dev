@@ -232,4 +232,6 @@ return [
 
     ],
 
+    'fairanalytics' => env('FAIRANALYTICS_ID')
+
 ];

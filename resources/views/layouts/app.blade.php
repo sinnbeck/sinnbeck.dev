@@ -4,7 +4,7 @@
     <title>sinnbeck-dev - @yield('title')</title>
     <link href="/css/app.css" rel="stylesheet"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
+    <script defer data-domain-id="{{config('app.fairanalytics')}}" src="https://fairdatacenter.de/cdn/fair.js"></script>
 </head>
 <body class="bg-slate-100">
 <div class="bg-slate-900 hidden border-b border-amber-500 mb-8 ">
