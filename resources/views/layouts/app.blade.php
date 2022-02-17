@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>sinnbeck-dev - @yield('title')</title>
+    <title>sinnbeck.dev - @yield('title')</title>
     <link href="/css/app.css" rel="stylesheet"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script defer data-domain-id="{{config('app.fairanalytics')}}" src="https://fairdatacenter.de/cdn/fair.js"></script>
