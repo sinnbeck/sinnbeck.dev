@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+    @apply bg-indigo-600 text-orange-200;
+}
+
 
 .prose pre {
     @apply px-0
@@ -14,7 +18,7 @@
  overflow-x-auto is recommended.
 */
 pre {
-    @apply my-4 rounded overflow-x-auto;
+    @apply my-4 rounded overflow-x-auto relative;
 }
 
 /*
@@ -59,4 +63,16 @@ pre code.torchlight .summary-caret {
 .torchlight.has-focus-lines:hover .line:not(.line-focus) {
     filter: blur(0px);
     opacity: 1;
+}
+.line-number {
+    text-align: right;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+pre code.torchlight + button {
+    @apply bg-indigo-600 text-orange-200 text-sm py-0 px-2 rounded absolute;
+    top:5px;
+    right:5px;
+    
 }
