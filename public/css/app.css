@@ -1387,7 +1387,12 @@ pre code.torchlight .line-number, pre code.torchlight .summary-caret{
        user-select: none;
 }
 
+pre code.torchlight + button:hover, pre code.torchlight:hover + button{
+  visibility: visible;
+}
+
 pre code.torchlight + button{
+  visibility: hidden;
   position: absolute;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
@@ -1400,6 +1405,14 @@ pre code.torchlight + button{
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(254 215 170 / var(--tw-text-opacity));
+}
+
+pre code.torchlight + button:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
+pre code.torchlight + button {
   top:5px;
   right:5px;
 }

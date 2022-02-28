@@ -70,8 +70,13 @@ pre code.torchlight .summary-caret {
     user-select: none;
 }
 
+pre code.torchlight + button:hover,
+pre code.torchlight:hover + button {
+    @apply visible;
+}
+
 pre code.torchlight + button {
-    @apply bg-indigo-600 text-orange-200 text-sm py-0 px-2 rounded absolute;
+    @apply bg-indigo-600 text-orange-200 text-sm py-0 px-2 rounded absolute invisible hover:bg-indigo-500;
     top:5px;
     right:5px;
     

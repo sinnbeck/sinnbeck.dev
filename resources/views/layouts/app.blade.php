@@ -5,7 +5,6 @@
     <link href="{{cache_bust('/css/app.css')}}" rel="stylesheet"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script defer data-domain-id="{{config('app.fairanalytics')}}" src="https://fairdatacenter.de/cdn/fair.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js" defer></script>
 
 </head>
 <body class="bg-slate-100">
@@ -73,7 +72,6 @@ blocks.forEach((block) => {
 async function copyCode(event) {
   const button = event.srcElement;
   const pre = button.parentElement;
-  let newPre = pre.cloneNode(true);  
 
   let code = pre.querySelector('code');
   let lines = [].slice.call(code.children);
