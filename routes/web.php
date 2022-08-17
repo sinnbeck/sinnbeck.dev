@@ -29,3 +29,7 @@ Route::get('/backlinks', BacklinksController::class);
 //        'published_at' => now()
 //    ]);
 //});
+
+Route::prefix('demos')->group(function () {
+    Route::get('livewire-file-uploader', \App\Http\Livewire\FileUploader::class);
+});

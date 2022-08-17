@@ -11,6 +11,7 @@
         "laravel/framework": "^8.65",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "livewire/livewire": "^2.10",
         "ryangjchandler/orbit": "^0.9.1",
         "torchlight/torchlight-commonmark": "^0.5.2"
     },
