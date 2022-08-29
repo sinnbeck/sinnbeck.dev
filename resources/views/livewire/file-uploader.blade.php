@@ -1,9 +1,10 @@
 <div x-data="fileUpload()">
-    <div class="flex flex-col justify-center items-center h-screen bg-slate-200 relative"
+    <div class="flex flex-col justify-center items-center h-screen bg-slate-200 relative "
          x-on:drop="isDropping = false"
          x-on:drop.prevent="handleFileDrop($event)"
          x-on:dragover.prevent="isDropping = true"
          x-on:dragleave.prevent="isDropping = false"
+         :class="isDropping ? '[&>*]:pointer-events-none' : ''"
     >
         <div class="absolute top-0 bottom-0 left-0 right-0 bg-blue-500 opacity-90 flex justify-center items-center z-30"
              x-show="isDropping"
@@ -40,6 +41,15 @@
                     </li>
                 @endforeach
             </ul>
+        @endif
+        @if ($errors->any())
+            <div class="bg-red-200 text-red-800 border rounded p-3 mt-10">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
         @endif
         <input type="file" id="file-upload" multiple @change="handleFileSelect" class="hidden" />
     </div>
