@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::feeds();
+
 Route::get('/', HomeController::class);
 Route::get('/posts/{post:slug}', PostsController::class);
 Route::get('/backlinks', BacklinksController::class);

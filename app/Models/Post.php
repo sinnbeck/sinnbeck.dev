@@ -12,8 +12,10 @@ use League\CommonMark\Extension\GithubFlavoredMarkdownExtension;
 use League\CommonMark\MarkdownConverter;
 use Orbit\Concerns\Orbital;
 use Torchlight\Commonmark\V2\TorchlightExtension;
+use Spatie\Feed\Feedable;
+use Spatie\Feed\FeedItem;
 
-class Post extends Model
+class Post extends Model implements Feedable
 {
     use Orbital;
 
@@ -31,6 +33,7 @@ class Post extends Model
 
     public static function schema(Blueprint $table)
     {
+        $table->integer('id');
         $table->string('title');
         $table->string('slug');
         $table->string('summary');
@@ -50,5 +53,17 @@ class Post extends Model
         return $converter->convertToHtml($this->content);
         return Str::of($this->content)->markdown();
 
+    }
+
+    public function toFeedItem(): FeedItem
+    {
+        return FeedItem::create()
+            ->id($this->id)
+            ->title($this->title)
+            ->summary($this->summary)
+            ->updated($this->updated_at)
+            ->link(url('posts/' . $this->slug))
+            ->authorName('René Sinnbeck')
+            ->authorEmail('-');
     }
 }
