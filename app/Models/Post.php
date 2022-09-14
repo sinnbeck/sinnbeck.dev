@@ -59,7 +59,7 @@ class Post extends Model implements Feedable
         return FeedItem::create()
             ->id($this->id)
             ->title($this->title)
-            ->summary($this->summary)
+            ->summary('<h1>' . $this->title . '</h1>' . str_replace('    ', '&nbsp;&nbsp;&nbsp;&nbsp;', $this->markdown))
             ->updated($this->updated_at)
             ->link(url('posts/' . $this->slug))
             ->authorName('René Sinnbeck')
