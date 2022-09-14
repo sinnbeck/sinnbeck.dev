@@ -18,8 +18,8 @@ return [
              */
             'url' => 'feed',
 
-            'title' => 'RSS Feed',
-            'description' => 'RSS feed for all blog posts.',
+            'title' => 'Sinnbeck.dev',
+            'description' => 'Sinnbeck.dev blog posts.',
             'language' => 'en-US',
 
             /*
