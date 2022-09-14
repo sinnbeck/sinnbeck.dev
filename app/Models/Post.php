@@ -50,8 +50,7 @@ class Post extends Model implements Feedable
         $environment->addExtension(new TorchlightExtension());
 
         $converter = new MarkdownConverter($environment);
-        return $converter->convertToHtml($this->content);
-        return Str::of($this->content)->markdown();
+        return $converter->convert($this->content);
 
     }
 
