@@ -54,12 +54,17 @@ class Post extends Model implements Feedable
 
     }
 
+    public function getFeedSummaryAttribute()
+    {
+        return '<h1>' . $this->title . '</h1>' . str_replace('    ', '&nbsp;&nbsp;&nbsp;&nbsp;', $this->markdown);
+    }
+
     public function toFeedItem(): FeedItem
     {
         return FeedItem::create()
             ->id($this->id)
             ->title($this->title)
-            ->summary('<h1>' . $this->title . '</h1>' . str_replace('    ', '&nbsp;&nbsp;&nbsp;&nbsp;', $this->markdown))
+            ->summary($this->feed_summary)
             ->updated($this->updated_at)
             ->link(url('posts/' . $this->slug))
             ->authorName('René Sinnbeck')
