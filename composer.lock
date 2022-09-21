@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8de4276d4e1913cc584ea76f71ddf35",
+    "content-hash": "75558d89cf725b8413b5d0dbc0ffeb74",
     "packages": [
         {
             "name": "andreaselia/analytics",
-            "version": "dev-add-yesterday",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaselia/laravel-analytics.git",
+                "reference": "561a9138ff94397fd2b06d9db75f688ffd4ea98d"
+            },
             "dist": {
-                "type": "path",
-                "url": "/var/www/repos/laravel-analytics",
-                "reference": "4af3b07eac7968fc3d92da06e0a579aac0215f5e"
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaselia/laravel-analytics/zipball/561a9138ff94397fd2b06d9db75f688ffd4ea98d",
+                "reference": "561a9138ff94397fd2b06d9db75f688ffd4ea98d",
+                "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
@@ -41,12 +47,7 @@
                     "AndreasElia\\Analytics\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "AndreasElia\\Analytics\\Tests\\": "tests/",
-                    "AndreasElia\\Analytics\\Database\\Factories\\": "database/factories/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -67,9 +68,17 @@
                 "middleware",
                 "package"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/andreaselia/laravel-analytics/issues",
+                "source": "https://github.com/andreaselia/laravel-analytics/tree/v1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/andreaselia",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-20T21:25:33+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -8584,9 +8593,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "andreaselia/analytics": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
